@@ -14,11 +14,17 @@ context:
         charset: "utf-8"
         menu:
             -
-                name: Home
-                description: Home Page
+                name: Titelseite
+                description: Titelseite
                 css_class: home
                 type: page
                 url: index.html
+            -
+                name: Über uns
+                description: Über uns
+                css_class: about
+                type: page
+                url: about/index.html
 meta:
     nodemeta: meta.yaml
     created: !!timestamp 2012-09-11 01:06:00

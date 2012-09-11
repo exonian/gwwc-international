@@ -23,19 +23,12 @@
         compatibility mode is within the first 1K bytes
         code.google.com/p/chromium/issues/detail?id=23003 -->
 
-  <title>{% block title %}{{ resource.meta.title }}{% endblock %}</title>
+  <title>{% block title %}{{ resource.meta.title }}{% endblock %} | Giving What We Can</title>
   <meta name="description" content="{{ resource.meta.description }}">
   <meta name="author" content="{{ resource.meta.author }}">
 
   <!--  Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="{{ resource.meta.viewport }}">
-
-  {% block favicons %}
-  <!-- Place favicon.ico & apple-touch-icon.png
-        in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="{{ media_url('/favicon.ico') }}">
-  <link rel="apple-touch-icon" href="{{ media_url('/apple-touch-icon.png') }}">
-  {% endblock favicons %}
 
   {% block css %}
   <link rel="stylesheet" href="{{ media_url('css/site.css') }}">
@@ -56,8 +49,7 @@
       <div id="main" role="main">
           <header class="banner clearfix">
           {% block header -%}
-            <h1>BASIC</h1>
-            <h3>A hyde website</h3>
+            <h1>Giving What We Can</h1>
           {%- endblock %}
           {% block nav %}
           {% from "macros.j2" import render_nav with context %}
