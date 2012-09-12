@@ -1,2 +1,15 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  background: #101010; }
+  background: #cccccc;
+  padding: 0 60px; }
+
+header {
+  background: #111111; }
+
+section.content {
+  background: white;
+  width: 960px;
+  margin: 0 auto; }
