@@ -18,7 +18,7 @@ context:
                 description: Titelseite
                 css_class: home
                 type: page
-                url: index.html
+                url: /
             -
                 name: Über uns
                 description: Über uns
