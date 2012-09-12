@@ -24,49 +24,49 @@ context:
                 description: Über uns
                 css_class: about
                 type: page
-                url: about/index.html
+                url: ueber-uns.html
             -
                 name: Das Versprechen
                 description: Das Versprechen
                 css_class: pledge
                 type: page
-                url: pledge/index.html
+                url: versprechen.html
             -
                 name: 10% Spenden
                 description: 10% Spenden
                 css_class: giving_10
                 type: page
-                url: giving_10/index.html
+                url: spenden.html
             -
                 name: Mehr Geben
                 description: Mehr Geben
                 css_class: giving_more
                 type: page
-                url: giving_more/index.html
+                url: mehr-geben.html
             -
                 name: Empfohlene Hilfsorganisationen
                 description: Empfohlene Hilfsorganisationen
                 css_class: charities
                 type: page
-                url: charities/index.html
+                url: hilfsorganisationen.html
             -
                 name: Werde Mitglied!
                 description: Werde Mitglied!
                 css_class: join
                 type: page
-                url: join/index.html
+                url: werde-mitglied.html
             -
                 name: Ortsgruppen
                 description: Ortsgruppen
                 css_class: chapters
                 type: page
-                url: chapters/index.html
+                url: ortsgruppen.html
             -
                 name: Kontakt
                 description: Kontakt
                 css_class: contact
                 type: page
-                url: contact/index.html
+                url: kontakt.html
 meta:
     nodemeta: meta.yaml
     created: !!timestamp 2012-09-11 01:06:00
