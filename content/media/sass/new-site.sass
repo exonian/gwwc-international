@@ -9,7 +9,10 @@ body
     background: $light_bg
     +sans
 
-p
+p,
+blockquote,
+dd,
+li
     line-height: 1.6em
 
 h2
@@ -17,8 +20,18 @@ h2
     font-weight: 100
     text-transform: uppercase
 
+h3
+    +serif
+    font-size: 1.5em
+    font-style: italic
+
 a
     +linkColors($text_on_light_bg, $lighter_text_on_light_bg, $gwwc_dark_red, $gwwc_bright_red)
+
+dt
+    font-style: italic
+dd + dt
+    margin-top: 1em
 
 header
     background: $dark_bg
@@ -36,8 +49,20 @@ header
     +center
     +clearFix
     .content
-        width: $page_width - 260px
+        width: $page_width - 270px
+        padding-right: 30px
         float: right
+    blockquote
+        +serif
+        font-size: 1.2em
+        line-height: 1.4em
+        font-style: italic
+        margin-left: 40px
+        & + p.quoter
+            margin-top: -10px
+            margin-left: 40px
+            .name
+                display: block
 
 .gwwc-logo
     .giving
