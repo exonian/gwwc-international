@@ -1,0 +1,102 @@
+=borderRadius($radius: 10px)
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+    -webkit-border-radius: $radius
+    -o-border-radius: $radius
+    border-radius: $radius
+    
+=borderRadiusByCorner($vertical, $horizontal, $radius: 10px)
+    -moz-border-radius-#{$vertical}#{$horizontal}: $radius
+    -ms-border-#{$vertical}-#{$horizontal}-radius: $radius
+    -webkit-border-#{$vertical}-#{$horizontal}-radius: $radius
+    border-#{$vertical}-#{$horizontal}-radius: $radius
+    
+=boxShadowStandard($size: 5px)
+    -moz-box-shadow: $size $size $size rgba(0,0,0,0.5)
+    -webkit-box-shadow: $size $size $size rgba(0,0,0,0.5)
+    box-shadow: $size $size $size rgba(0,0,0,0.5)
+    
+=boxShadowCustom($vars)
+    -webkit-box-shadow: $vars
+    -moz-box-shadow: $vars
+    box-shadow: $vars
+    
+=verticalGradient($top, $bottom, $fallback)
+    background: -webkit-gradient(linear, left top, left bottom, from($top), to($bottom))
+    background: -moz-linear-gradient(top, $top, $bottom)
+    background: -o-linear-gradient(top, $top, $bottom)
+    background: linear-gradient(top, $top, $bottom)
+    background-color: $fallback
+    
+=horizontalGradient($left, $right, $fallback)
+    background: -webkit-gradient(linear, left top, right top, from($left), to($right))
+    background: -moz-linear-gradient(left, $left, $right)
+    background: -o-linear-gradient(left, $left, $right)
+    background: linear-gradient(left, $left, $right)
+    background-color: $fallback
+    
+=radialGradientStandard($radius, $fromColour, $toColour, $fromPos:0%, $toPos:100%)
+    background-position: center center
+    background-image: radial-gradient(center 45deg, circle closest-corner, $fromColour $fromPos, $toColour $toPos)
+    background-image: -moz-radial-gradient(center 45deg, circle closest-corner, $fromColour $fromPos, $toColour $toPos)
+    background-image: -webkit-gradient(radial, center center, 0, center center, $radius, from($fromColour), to($toColour))
+    
+=rotate($angle)
+    -moz-transform: rotate($angle)
+    -webkit-transform: rotate($angle)
+    -o-transform: rotate($angle)
+    -ms-transform: rotate($angle)
+
+    
+=transition($scope: all, $duration: .2s, $easing: linear)
+    transition: $scope $duration $easing
+    -o-transition: $scope $duration $easing 
+    -moz-transition: $scope $duration $easing 
+    -webkit-transition: $scope $duration $easing
+
+=userSelect($val)
+    -webkit-user-select: $val
+    -moz-user-select: $val
+	
+=clearFix($side: both)
+    &:before,
+    &:after
+        content: ""
+        display: table
+    &:after
+        clear: $side
+    zoom: 1
+     
+=center
+    display: block
+    margin:
+        left: auto
+        right: auto
+        
+=imageReplace($src)
+    text-indent: -9999px
+    background-image: url($src)
+    background-repeat: no-repeat
+    background-position: center center
+    
+=size($width, $height, $units)
+    width: $width + $units
+    height: $height + $units
+    
+=linkColors($normal, $visited, $hover, $active)
+    color: $normal
+    &:visited
+        color: $visited
+    &:hover,
+    &:focus
+        color: $hover
+    &:active
+        color: $active
+        
+=opacity($opacity)
+    filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})")
+    opacity: $opacity
+    
+=bgImageWithAlpha($src)
+    background-image: url($src)
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=#{$src})

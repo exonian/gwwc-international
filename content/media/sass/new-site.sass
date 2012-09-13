@@ -1,19 +1,64 @@
-*
-    margin: 0
-    padding: 0
+@import reset.sass
+@import colors.sass
+@import text.sass
+@import mixins.sass
 
+$page_width: 960px
 
 body
-    background: #ccc
+    background: $light_bg
+    +sans
+
+p
+    line-height: 1.6em
+
+h2
+    font-size: 1.8em
+    font-weight: 100
+    text-transform: uppercase
+
+a
+    +linkColors($text_on_light_bg, $lighter_text_on_light_bg, $gwwc_dark_red, $gwwc_bright_red)
 
 header
-    background: #111
+    background: $dark_bg
+    color: $text_on_dark_bg
+    padding: 5px
+    .content
+        width: $page_width
+        +center
 
 #main
-    background: #fff
-    width: 960px
-    margin: 0 auto
+    background: $content_bg
+    color: $text_on_light_bg
+    width: $page_width - 20px
+    padding: 10px
+    +center
+    +clearFix
+    .content
+        width: $page_width - 260px
+        float: right
 
-.content
-    width: 700px
-    float: right
+.gwwc-logo
+    .giving
+        font-size: 1.5em
+        text-transform: uppercase
+        display: block
+        line-height: 0.8em
+        font-weight: bold
+    font-size: 1.6em
+    text-transform: lowercase
+    font-weight: normal
+
+nav.site-nav
+    padding:
+        right: 10px
+        left: 10px
+    width: 220px
+    ul
+        list-style: none
+        padding: 0
+    li
+        margin: 0 0 1em
+    a
+        text-decoration: none

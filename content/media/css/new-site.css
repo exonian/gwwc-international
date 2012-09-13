@@ -1,18 +1,96 @@
-* {
+html,
+body,
+header,
+footer,
+section,
+nav,
+article,
+div {
   margin: 0;
   padding: 0; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul.reset {
+  margin: 5px 0px;
+  padding: 5px 0px; }
+
+a img {
+  border: 0; }
+
 body {
-  background: #cccccc; }
+  background: #e6e6e6;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+p {
+  line-height: 1.6em; }
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+a {
+  color: #111111; }
+  a:visited {
+    color: #666666; }
+  a:hover, a:focus {
+    color: #8b0a05; }
+  a:active {
+    color: #eb0a05; }
 
 header {
-  background: #111111; }
+  background: #111111;
+  color: #e6e6e6;
+  padding: 5px; }
+  header .content {
+    width: 960px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 #main {
   background: white;
-  width: 960px;
-  margin: 0 auto; }
+  color: #111111;
+  width: 940px;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1; }
+  #main:before, #main:after {
+    content: "";
+    display: table; }
+  #main:after {
+    clear: both; }
+  #main .content {
+    width: 700px;
+    float: right; }
 
-.content {
-  width: 700px;
-  float: right; }
+.gwwc-logo {
+  font-size: 1.6em;
+  text-transform: lowercase;
+  font-weight: normal; }
+  .gwwc-logo .giving {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: block;
+    line-height: 0.8em;
+    font-weight: bold; }
+
+nav.site-nav {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 220px; }
+  nav.site-nav ul {
+    list-style: none;
+    padding: 0; }
+  nav.site-nav li {
+    margin: 0 0 1em; }
+  nav.site-nav a {
+    text-decoration: none; }
