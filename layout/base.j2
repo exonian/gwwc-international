@@ -47,9 +47,11 @@
   <div id="container">
       {% block container %}
       <header class="banner clearfix">
-      {% block header -%}
-          <h1>Giving What We Can</h1>
-      {%- endblock %}
+          <div class="content">
+          {% block header -%}
+              <h1 class="gwwc-logo"><span class="giving">Giving</span> What We Can</h1>
+          {%- endblock %}
+          </div>
       </header>
       <div id="main" role="main">
           <section class="content">
@@ -57,7 +59,7 @@
           {% block main %}
           {% endblock main %}
           </section>
-          <nav>
+          <nav class="site-nav">
           {% block nav %}
           {% from "macros.j2" import render_nav with context %}
           {{ render_nav(menu, 'main_nav') }}
@@ -66,9 +68,6 @@
       </div>
     {% endblock container %}
   </div> <!--! end of #container -->
-  <footer>
-      Powered by <a href="http://ringce.com/hyde">hyde</a>.
-  </footer>
   {% endblock content%}
   {% block js %}
   <!-- Javascript at the bottom for fast page loading -->
