@@ -46,21 +46,23 @@
   {% block content %}
   <div id="container">
       {% block container %}
+      <header class="banner clearfix">
+      {% block header -%}
+          <h1>Giving What We Can</h1>
+      {%- endblock %}
+      </header>
       <div id="main" role="main">
-          <header class="banner clearfix">
-          {% block header -%}
-              <h1>Giving What We Can</h1>
-          {%- endblock %}
-          {% block nav %}
-          {% from "macros.j2" import render_nav with context %}
-          {{ render_nav(menu, 'main_nav') }}
-          {% endblock %}
-          </header>
           <section class="content">
               <h2>{{ resource.meta.title }}</h2>
           {% block main %}
           {% endblock main %}
           </section>
+          <nav>
+          {% block nav %}
+          {% from "macros.j2" import render_nav with context %}
+          {{ render_nav(menu, 'main_nav') }}
+          {% endblock %}
+          </nav>
       </div>
     {% endblock container %}
   </div> <!--! end of #container -->
