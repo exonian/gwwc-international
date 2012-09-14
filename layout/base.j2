@@ -54,8 +54,10 @@
           </div>
       </header>
       <div id="main" role="main">
-          <section class="content">
-              <h2>{{ resource.meta.title }}</h2>
+          <section class="content{% if resource.meta.notitle %} notitle{% endif %}">
+              {% if not resource.meta.notitle %}
+                  <h2>{{ resource.meta.title }}</h2>
+              {% endif %}
           {% block main %}
           {% endblock main %}
           </section>
