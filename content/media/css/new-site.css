@@ -104,7 +104,8 @@ header {
 .gwwc-logo {
   font-size: 1.6em;
   text-transform: lowercase;
-  font-weight: normal; }
+  font-weight: normal;
+  padding-left: 18px; }
   .gwwc-logo .giving {
     font-size: 1.5em;
     text-transform: uppercase;
