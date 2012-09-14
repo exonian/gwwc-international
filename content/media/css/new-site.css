@@ -41,7 +41,10 @@ h2 {
 h3 {
   font-family: Baskerville, Times, "Times New Roman", serif;
   font-size: 1.5em;
-  font-style: italic; }
+  font-style: italic;
+  border-top: 1px dotted #999999;
+  margin-top: 15px;
+  padding-top: 25px; }
 
 a {
   color: #111111; }
