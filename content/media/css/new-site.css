@@ -102,6 +102,7 @@ header {
     font-style: italic;
     margin-left: 40px; }
     #main blockquote + p.quoter {
+      color: #666666;
       margin-top: -10px;
       margin-left: 40px; }
       #main blockquote + p.quoter .name {
@@ -130,6 +131,8 @@ nav.site-nav {
     margin: 0 0 1em; }
   nav.site-nav a {
     text-decoration: none; }
+  nav.site-nav .active {
+    text-transform: uppercase; }
 
 p.address {
   margin-left: 40px; }
