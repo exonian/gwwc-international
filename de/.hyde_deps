@@ -1,0 +1,2 @@
+!!python/unicode 'index.html': [macros.j2, base.j2, analytics.j2]
+!!python/unicode 'spenden.html': [macros.j2, base.j2, analytics.j2]
