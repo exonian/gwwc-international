@@ -30,5 +30,4 @@ Deploy
 
 Make new site
 -------------
-1. pip install -r requirements.txt
-2. cp -r [existing site] [new site]
+1. cp -r [existing site] [new site]
