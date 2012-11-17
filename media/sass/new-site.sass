@@ -29,7 +29,7 @@ h3
     padding-top: 25px
 
 a
-    +linkColors($text_on_light_bg, $lighter_text_on_light_bg, $gwwc_dark_red, $gwwc_bright_red)
+    +linkColors($gwwc_dark_red, desaturate($gwwc_dark_red, 50%), $gwwc_pink, $gwwc_bright_red)
 
 dt
     font-style: italic
@@ -37,9 +37,9 @@ dd + dt
     margin-top: 1em
 
 header
-    +verticalGradient(lighten($dark_bg, 10%), $dark_bg, $dark_bg)
+    background: url('../images/chrome/header/header-bg.png') repeat-x
     color: $text_on_dark_bg
-    padding: 5px
+    height: 75px
     .content
         width: $page_width
         +center
@@ -72,15 +72,18 @@ header
 
 .gwwc-logo
     .giving
-        font-size: 1.5em
+        padding-top: 2px
+        font-size: 36px
         text-transform: uppercase
         display: block
-        line-height: 0.8em
+        line-height: 36px
         font-weight: bold
-    font-size: 1.6em
+        color: $white
+    font-size: 23px
     text-transform: lowercase
     font-weight: normal
     padding-left: 18px
+    color: $light_grey
 
 nav.site-nav
     padding:
