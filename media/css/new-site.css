@@ -62,7 +62,7 @@ dd + dt {
   margin-top: 1em; }
 
 header {
-  background: url("../images/chrome/header/header-bg.png") repeat-x;
+  background: #7a0003 url("../images/header-bg.png") repeat-x;
   color: #e6e6e6;
   height: 75px; }
   header .content {
